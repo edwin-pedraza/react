@@ -14,7 +14,7 @@ const Home =() => {
     <>
       <Routes>
         <Route path='/react' element = {<App/>}/>
-        <Route path='/#resum' element = {<Education/>}/>
+        {/* <Route path='/#resum' element = {<Education/>}/> */}
       </Routes>
     </>
     
