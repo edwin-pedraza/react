@@ -10,7 +10,7 @@ import foto from "../assets/foto_edwin.png";
 
 const ServiceCard = ({ index, title, icon}) => {
   return(
-    <Tilt className = "sm:w-[250px] w-full ">
+    <Tilt className = "sm:w-[250px] w-full flex-wrap justify-center">
       <motion.div
       variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
       className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
@@ -38,7 +38,7 @@ const ServiceCard = ({ index, title, icon}) => {
 const About = () => {
   return (
     <>
-      <div className="flex flex-row gap-10">
+      <div className="flex sm:flex-row gap-10 flex-col-reverse">
         <div>
 
           <motion.div variants={textVariant()}>
@@ -69,16 +69,17 @@ const About = () => {
           </motion.p>
         </div>
 
-        <div className="m-auto">
+        <div className="m-auto w-">
 
-          <Tilt className = "sm:w-[350px] w-full ">
+          <Tilt className = "sm:w-full w-[360px]  ">
               <motion.div
               variants={fadeIn("left", "spring", 0.5 , 0.75)}
               className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
               >
               <div
               
-                className='bg-tertiary rounded-[20px] py-5 px-8 min-h-[280px] flex justify-evenly items-center flex-col'
+                className='bg-tertiary rounded-[20px] m-4 py-5 px-8  flex flex-wrap justify-center flex-col'
+                
               >
                 <img
                   src={foto}
@@ -98,7 +99,7 @@ const About = () => {
 
 
       
-      <div className='mt-20 mx-10 flex flex-wrap gap-10 justify-between '>
+      <div className='mt-20 mx-10 flex flex-wrap gap-14 justify-center '>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}

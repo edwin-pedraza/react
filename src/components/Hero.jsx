@@ -85,8 +85,10 @@ const Hero = () => {
           
           
         </div>
+        <div className='w-2/3 h-2/3 m-auto'>
 
-        <ComputersCanvas />
+          <ComputersCanvas />
+        </div>
         <StarsCanvas/>
       </div>
 
