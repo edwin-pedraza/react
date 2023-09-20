@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { ComputersCanvas, StarsCanvas } from "./canvas";
+import { ModelCanvas, StarsCanvas } from "./canvas";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { FaLinkedinIn, FaReact } from "react-icons/fa";
 import {TbBrandNextjs} from "react-icons/tb"
@@ -87,7 +87,8 @@ const Hero = () => {
         </div>
         <div className='w-2/3 h-2/3 m-auto'>
 
-          <ComputersCanvas />
+          
+          < ModelCanvas />
         </div>
         <StarsCanvas/>
       </div>

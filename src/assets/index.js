@@ -4,6 +4,7 @@ import creator from "./gamedev.jpeg";
 import mobile from "./mobile.png";
 import web from "./web.jpeg";
 import github from "./github.png";
+import webIcon from "./web_img.jpeg";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
@@ -45,6 +46,7 @@ export {
   mobile,
   web,
   github,
+  webIcon,
   menu,
   close,
   css,

@@ -7,6 +7,9 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn, fadeIn } from "../utils/motion";
 
+// template_vzrlzhc
+// service_mns5l1d
+// /3a4LTokkbFElR1C_h
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -33,16 +36,20 @@ const Contact = () => {
 
     emailjs
       .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        // import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+        // import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        'service_mns5l1d',
+        'template_vzrlzhc',
+
         {
           from_name: form.name,
           to_name: "JavaScript Mastery",
           from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
+          to_email: "edw.pedraza@gmail.com",
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        '3a4LTokkbFElR1C_h'
+        // import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
       )
       .then(
         () => {
@@ -66,7 +73,7 @@ const Contact = () => {
 
   return (
     <div
-      className={`xl:mt-1 flex xl:flex-row flex-col-reverse gap-10 `}
+      className={`xl:mt-1 flex  xl:flex-row flex-col-reverse gap-10 `}
     >
       <motion.div
         variants={slideIn("left", "tween", 0.1, 1)}
@@ -124,8 +131,8 @@ const Contact = () => {
       </motion.div>
 
       <motion.div
-        variants={fadeIn("", "", 0.4, 2)}
-        className='xl:flex-1 xl:h-auto '
+        variants={fadeIn("", "", 0.4, 1)}
+        className=' xl:h-auto xl:flex-1 md:h-[550px] h-[350px]'
       >
         <EarthCanvas />
       </motion.div>

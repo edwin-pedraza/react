@@ -263,23 +263,21 @@ const projects = [
   {
     name: "Portfolio",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "I'm thrilled to present my front-end web portfolio, created using cutting-edge technologies like Vite and React. This portfolio showcases my ability to design and develop captivating, responsive user experiences. Notable features include user-centric design, seamless responsiveness across various devices, meticulous performance optimization, and a steadfast commitment to accessibility.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "CSS",
         color: "green-text-gradient",
       },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
+      
     ],
     image: carrent,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/edwin-pedraza/React_portafoliopapp",
+    source_link_web: "https://edwin-pedraza.github.io/react/Project/portfolio/build/index.html",
   },
   {
     name: "Job IT",

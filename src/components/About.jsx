@@ -78,12 +78,12 @@ const About = () => {
               >
               <div
               
-                className='bg-tertiary rounded-[20px] m-4 py-5 px-8  flex flex-wrap justify-center flex-col'
+                className='bg-tertiary rounded-[20px] m-2 py-5 px-8  flex flex-wrap justify-center flex-col'
                 
               >
                 <img
                   src={foto}
-                  alt='web-development'
+                  alt='foto'
                   className='w-full h-full object-contain'
                 />
 
