@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-import { styles } from "../styles";
+import { styles } from "../../styles";
 import { ModelCanvas, StarsCanvas } from "./canvas";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { FaLinkedinIn, FaReact } from "react-icons/fa";

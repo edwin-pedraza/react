@@ -28,7 +28,7 @@ import {
   upskilled,
   ecci,
   insutec,
-} from "../assets";
+} from "../../../assets";
 
 export const navLinks = [
   {

@@ -1,13 +1,11 @@
 import  { useState } from 'react'
-import { SectionWrapper } from "../hoc";
+import { SectionWrapper } from "./hoc";
 
 import { motion } from "framer-motion";
-import { textVariant } from "../utils/motion";
-import { styles } from "../styles";
+import { textVariant } from "./utils/motion";
+import { styles } from "../../styles";
 import Education from './resume/Education';
 import Experience from './resume/Experience';
-
-import { Link, Outlet } from 'react-router-dom';
 
 
 

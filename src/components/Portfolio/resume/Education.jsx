@@ -7,10 +7,9 @@ import { motion } from "framer-motion";
 
 import "react-vertical-timeline-component/style.min.css";
 
-import { styles } from "../../styles";
-import { educationes} from "../../constants";
-import { experiences } from "../../constants";
-import { SectionWrapper } from "../../hoc";
+import { styles } from "../../../styles";
+import { educationes} from "../../Portfolio/constants";
+import { SectionWrapper } from "../../Portfolio/hoc";
 
 const ExperienceCard = ({ education }) => {
   return (

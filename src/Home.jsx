@@ -1,22 +1,44 @@
-import { Route, Routes } from 'react-router-dom';
-// import Education from './components/resume/Education';
+import { 
+  About,
+  Contact,
+  // Feedbacks,
+  Hero,
+  Navbar,
+  Tech,
+  Works,
+  StarsCanvas,
+} from './components/Portfolio';
+import Resume from './components/Portfolio/Resume';
 
-import App from './App';
-import Blog from './components/blog/Blog';
+
 
 
 const Home =() => {
   
 
   return (
+
     <>
-    
-      
-      <Routes>
-        <Route path='/react' element = {<App/>}/>
-        <Route path='/react/blog' element = {< Blog/>}/>
-      </Routes>
+    <div className='relative z-0 bg-primary'>
+        <div > 
+          <Navbar />
+          <Hero />
+          
+        </div>
+
+        <About />
+        <Resume/>
+        <Tech />
+        <Works />
+        {/* <Feedbacks /> */}
+        
+      </div>
+      <div className='relative'>
+        <Contact />
+        <StarsCanvas />
+      </div>
     </>
+    
     
     
   )
