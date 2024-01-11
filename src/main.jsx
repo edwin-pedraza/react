@@ -3,9 +3,13 @@ import ReactDOM from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
 import App from './App.jsx'
 import './index.css'
+import { AuthContexProvider } from './components/blog/context/AuthContext.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
-    <App />
+    < AuthContexProvider >
+      <App />
+    </AuthContexProvider>
+    
   </BrowserRouter>
 )

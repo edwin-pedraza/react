@@ -1,22 +1,26 @@
 
-import { Route, Routes } from 'react-router-dom';
+import './blog.css'
 import Header from './page/header';
-import BlogList from './page/BlogList';
 import BlogPost from './page/BlogPost';
 import Footer from './page/Footer';
-import Login from './page/Login';
+import Home from './page/Home';
 const Blog =() => {
   
 
   return (
-    <>
-      <Login />
-      {/* < Header />
-      < BlogList />
-      < BlogPost />
-      < Footer /> */}
+    <div className='rootBlog  '>
+        <div className='max-w-7xl m-auto'>
+          {/* <Login /> */}
+          < Header />
+          < Home />
+          {/* < BlogList />
+          < BlogPost />
+          < Footer /> */}
+
+          {/* < BlogPost /> */}
+        </div>
     
-    </>
+    </div>
     
     
   )
