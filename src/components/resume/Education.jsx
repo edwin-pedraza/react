@@ -74,7 +74,7 @@ const Education = () => {
           My Background
         </p>
         <h2 className={`${styles.resumeTex} text-center`}>
-          Educations.
+          Education.
         </h2>
       </motion.div>
 
