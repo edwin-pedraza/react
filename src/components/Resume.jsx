@@ -22,7 +22,7 @@ const Resume = () => {
       
       
         <p className={`${styles.sectionSubText} text-center`}>What I have done</p>
-        <h2 className={`${styles.sectionHeadText} text-center`}>Resum.</h2>
+        <h2 className={`${styles.sectionHeadText} text-center`}>Resume.</h2>
       
 
       <motion.div variants={textVariant(0)}>
