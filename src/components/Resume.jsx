@@ -1,4 +1,4 @@
-import  { useState } from 'react'
+import  { useState } from 'react';
 import { SectionWrapper } from "../hoc";
 
 import { motion } from "framer-motion";
@@ -28,11 +28,10 @@ const Resume = () => {
       <motion.div variants={textVariant(0)}>
           <div className="w-full flex justify-around my-12">
             <a
-              onClick={() =>
-                setEducationData(true) &
-                setExperienceData(false) 
-                
-              }
+              onClick={() => {
+                setEducationData(true);
+                setExperienceData(false);
+              }}
               className={`${
                 educationData
                   ? "border-2 p-2 rounded-lg text-2xl "
@@ -41,13 +40,12 @@ const Resume = () => {
             >
               Education
             </a>
-            
+
             <a
-              onClick={() =>
-                setEducationData(false) &
-                setExperienceData(true) 
-                
-              }
+              onClick={() => {
+                setEducationData(false);
+                setExperienceData(true);
+              }}
               className={`${
                 experienceData
                   ? "border-2 p-2 rounded-lg text-2xl"
@@ -72,4 +70,4 @@ const Resume = () => {
   );
 };
 
-export default SectionWrapper(Resume, "resum");
+export default SectionWrapper(Resume, "resume");
