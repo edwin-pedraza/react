@@ -9,7 +9,6 @@ import "react-vertical-timeline-component/style.min.css";
 
 import { styles } from "../../styles";
 import { educationes} from "../../constants";
-import { experiences } from "../../constants";
 import { SectionWrapper } from "../../hoc";
 
 const ExperienceCard = ({ education }) => {
