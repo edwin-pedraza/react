@@ -73,7 +73,7 @@ const Education = () => {
         <p className={`${styles.resumeSubText} text-center`}>
           My Background
         </p>
-        <h2 className={`${styles.resumeTex} text-center`}>
+        <h2 className={`${styles.resumeText} text-center`}>
           Education.
         </h2>
       </motion.div>

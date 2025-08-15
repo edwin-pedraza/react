@@ -90,7 +90,7 @@ const Experience = () => {
         <p className={`${styles.resumeSubText} text-center`}>
           What I have done so far
         </p>
-        <h2 className={`${styles.resumeTex} text-center`}>
+        <h2 className={`${styles.resumeText} text-center`}>
           Work Experience.
         </h2>
       </motion.div>
