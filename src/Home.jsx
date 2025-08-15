@@ -2,7 +2,6 @@
 
 
 import { Route, Routes } from 'react-router-dom';
-import Education from './components/resume/Education';
 
 import App from './App';
 

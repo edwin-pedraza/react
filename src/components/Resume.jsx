@@ -7,7 +7,6 @@ import { styles } from "../styles";
 import Education from './resume/Education';
 import Experience from './resume/Experience';
 
-import { Link, Outlet } from 'react-router-dom';
 
 
 
