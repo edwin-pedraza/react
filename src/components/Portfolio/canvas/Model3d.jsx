@@ -3,12 +3,11 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
-const base = import.meta.env.BASE_URL || '/';
-const url  = `${base}/avatar/avatar.gltf`;
+
 
 const Avatar = ({isMobile}) => {
-  const avatar = useGLTF(url);
-  
+  const avatar = useGLTF("./planet/scene.gltf");
+  // const earth = useGLTF("./planet/scene.gltf");
   return (
     <mesh >
       <hemisphereLight intensity={10} groundColor='black' />
