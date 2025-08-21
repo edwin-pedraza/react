@@ -1,10 +1,5 @@
-<<<<<<< HEAD:src/components/Portfolio/Resume.jsx
 import  { useState } from 'react'
 import { SectionWrapper } from "./hoc";
-=======
-import  { useState } from 'react';
-import { SectionWrapper } from "../hoc";
->>>>>>> main:src/components/Resume.jsx
 
 import { motion } from "framer-motion";
 import { textVariant } from "./utils/motion";
@@ -12,10 +7,6 @@ import { styles } from "../../styles";
 import Education from './resume/Education';
 import Experience from './resume/Experience';
 
-<<<<<<< HEAD:src/components/Portfolio/Resume.jsx
-=======
-
->>>>>>> main:src/components/Resume.jsx
 
 
 

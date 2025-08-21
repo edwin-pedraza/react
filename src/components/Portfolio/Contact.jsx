@@ -4,17 +4,12 @@ import emailjs from "@emailjs/browser";
 
 import { styles } from "../../styles";
 import { EarthCanvas } from "./canvas";
-<<<<<<< HEAD:src/components/Portfolio/Contact.jsx
 import { SectionWrapper } from "./hoc";
 import { slideIn, fadeIn } from "./utils/motion";
 
 // template_vzrlzhc
 // service_mns5l1d
 // /3a4LTokkbFElR1C_h
-=======
-import { SectionWrapper } from "../hoc";
-import { slideIn, fadeIn } from "../utils/motion";
->>>>>>> main:src/components/Contact.jsx
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({

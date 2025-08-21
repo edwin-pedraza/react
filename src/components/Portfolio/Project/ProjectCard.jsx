@@ -1,14 +1,11 @@
 
 import { motion } from "framer-motion";
 import {Tilt} from "react-tilt";
-<<<<<<< HEAD:src/components/Portfolio/Project/ProjectCard.jsx
+
 import { fadeIn} from "../utils/motion";
 import { github, webIcon } from "../../../assets";
-=======
-import { fadeIn} from "../../utils/motion";
-import { github, webIcon } from "../../assets";
-import { styles } from "../../styles";
->>>>>>> main:src/components/Project/ProjectCard.jsx
+import { styles } from "../../../styles";
+
 
 const ProjectCard =({
   index,

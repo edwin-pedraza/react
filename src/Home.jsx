@@ -10,16 +10,6 @@ import {
 } from './components/Portfolio';
 import Resume from './components/Portfolio/Resume';
 
-
-
-<<<<<<< HEAD
-=======
-import { Route, Routes } from 'react-router-dom';
-
-import App from './App';
-
->>>>>>> main
-
 const Home =() => {
   
 
