@@ -28,7 +28,7 @@ const Home =() => {
         <Tech />
         <Works />
         {/* <Feedbacks /> */}
-        
+     
       </div>
       <div className='relative'>
         <Contact />

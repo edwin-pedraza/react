@@ -3,11 +3,11 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
+const AVATAR_URL = "./planet/scene.gltf";
 
-
-const Avatar = ({isMobile}) => {
-  const avatar = useGLTF("./planet/scene.gltf");
-  // const earth = useGLTF("./planet/scene.gltf");
+const Avatar = ({ isMobile }) => {
+  const avatar = useGLTF(AVATAR_URL);
+  
   return (
     <mesh >
       <hemisphereLight intensity={10} groundColor='black' />
@@ -27,8 +27,8 @@ const Avatar = ({isMobile}) => {
         // rotation={[0, 0, 0]}
       />
     </mesh>
-  )
-}
+  );
+};
 
 const ModelCanvas = () => {
 
@@ -56,8 +56,8 @@ const ModelCanvas = () => {
   }, []);
 
 
-  return(
-    <Canvas className = {" sm:basis-1/3 sm:cursor-pointer sm:block h-1 "}
+  return (
+    <Canvas className={" sm:basis-1/3 sm:cursor-pointer sm:block h-1 "}
       frameloop='demand'
       dpr={[1, 2]}
       gl={{ preserveDrawingBuffer: true }}
@@ -71,13 +71,15 @@ const ModelCanvas = () => {
         enableZoom={false}
         maxPolarAngle={Math.PI / 2}
         minPolarAngle={Math.PI / 2}
-        
+
       />
-      <Avatar isMobile = {isMobile}/>
+      <Avatar isMobile={isMobile} />
       </Suspense>
       <Preload all />
       </Canvas>
-  )
-}
+  );
+};
 
-export default ModelCanvas
+useGLTF.preload(AVATAR_URL);
+
+export default ModelCanvas;
