@@ -1,11 +1,13 @@
 import { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
-
 import CanvasLoader from "../Loader";
 
+const base = import.meta.env.BASE_URL || '/';
+const url  = `${base}/avatar/avatar.gltf`;
+
 const Avatar = ({isMobile}) => {
-  const avatar = useGLTF("../assets/3d_avatar/scene.gltf");
+  const avatar = useGLTF(url);
   
   return (
     <mesh >
