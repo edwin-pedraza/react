@@ -7,9 +7,15 @@ import { motion } from "framer-motion";
 
 import "react-vertical-timeline-component/style.min.css";
 
+<<<<<<< HEAD:src/components/Portfolio/resume/Education.jsx
 import { styles } from "../../../styles";
 import { educationes} from "../../Portfolio/constants";
 import { SectionWrapper } from "../../Portfolio/hoc";
+=======
+import { styles } from "../../styles";
+import { educationes} from "../../constants";
+import { SectionWrapper } from "../../hoc";
+>>>>>>> main:src/components/resume/Education.jsx
 
 const ExperienceCard = ({ education }) => {
   return (
@@ -72,8 +78,8 @@ const Education = () => {
         <p className={`${styles.resumeSubText} text-center`}>
           My Background
         </p>
-        <h2 className={`${styles.resumeTex} text-center`}>
-          Educations.
+        <h2 className={`${styles.resumeText} text-center`}>
+          Education.
         </h2>
       </motion.div>
 

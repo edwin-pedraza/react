@@ -1,15 +1,20 @@
-import  { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
 import { styles } from "../../styles";
 import { EarthCanvas } from "./canvas";
+<<<<<<< HEAD:src/components/Portfolio/Contact.jsx
 import { SectionWrapper } from "./hoc";
 import { slideIn, fadeIn } from "./utils/motion";
 
 // template_vzrlzhc
 // service_mns5l1d
 // /3a4LTokkbFElR1C_h
+=======
+import { SectionWrapper } from "../hoc";
+import { slideIn, fadeIn } from "../utils/motion";
+>>>>>>> main:src/components/Contact.jsx
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -36,11 +41,8 @@ const Contact = () => {
 
     emailjs
       .send(
-        // import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        // import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-        'service_mns5l1d',
-        'template_vzrlzhc',
-
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
           to_name: "JavaScript Mastery",
@@ -48,8 +50,7 @@ const Contact = () => {
           to_email: "edw.pedraza@gmail.com",
           message: form.message,
         },
-        '3a4LTokkbFElR1C_h'
-        // import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       )
       .then(
         () => {

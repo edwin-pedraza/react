@@ -43,35 +43,32 @@ const About = () => {
 
           <motion.div variants={textVariant()}>
             <p className={styles.sectionSubText}>Introduction</p>
-            <h2 className={styles.sectionHeadText}>Overview.</h2>
+            <h2 className={styles.sectionHeadTextSm}>Overview.</h2>
           </motion.div>
-          <motion.p
-            variants={fadeIn("", "", 0.1, 1)}
-            className='mt-4  text-secondary text-[17px] max-w-2 leading-[30px]'
-          >
-            {`I'm `} a Colombian System Engineer with a strong software testing and IT support background. Transitioning seamlessly into a skilled Frontend Developer, {`I'm `} passionate 
-            about crafting user-friendly web applications with CSS, HTML, React.js.
-            <br/>
-            My standout feature I merge frontend finesse with backend proficiency. Python and Node.js fortify my server-side work, ensuring smooth user experiences 
-            by bridging the gap between front and backend.
 
-            
-          </motion.p>
-
-          <motion.p
+          <motion.div
             variants={fadeIn("", "", 0.1, 1)}
-            className='mt-4  text-secondary text-[17px] max-w-2 leading-[30px]'
+            className='mt-4 text-secondary text-[17px] max-w-lg leading-[30px] space-y-4'
           >
-            I excel in API management and thorough testing through tools like Postman, guaranteeing seamless integration of frontend and backend functionalities.
-            Versatility defines me – SQL, MySQL, SQLite, MongoDB – I architect data-driven apps with scalable solutions for diverse project needs.
-            Driven by meticulousness and problem-solving, I deliver uncompromising quality, exceeding expectations in dynamic environments.
-            With my frontend prowess and robust backend/database foundation, I'm poised to elevate innovative projects in growth-focused organizations.
-          </motion.p>
+            <p>
+              {`I'm `} a Colombian System Engineer with a strong software testing and IT support background. Transitioning seamlessly into a skilled Frontend Developer, {`I'm `} passionate about crafting user-friendly web applications with CSS, HTML, and React.js.
+            </p>
+            <p>
+              My standout feature is merging frontend finesse with backend proficiency. Python and Node.js fortify my server-side work, ensuring smooth user experiences by bridging the gap between front and backend.
+            </p>
+            <p>
+              I excel in API management and thorough testing through tools like Postman, guaranteeing seamless integration of frontend and backend functionalities. Versatility defines me – SQL, MySQL, SQLite, MongoDB – I architect data-driven apps with scalable solutions for diverse project needs.
+            </p>
+            <p>
+              Driven by meticulousness and problem-solving, I deliver uncompromising quality, exceeding expectations in dynamic environments. With my frontend prowess and robust backend/database foundation, {"I'm"} poised to elevate innovative projects in growth-focused organizations.
+            </p>
+          </motion.div>
+
         </div>
 
-        <div className="m-auto w-">
+        <div className="m-auto w-full sm:w-[360px]">
 
-          <Tilt className = "sm:w-full w-[360px]  ">
+          <Tilt className="w-full">
               <motion.div
               variants={fadeIn("left", "spring", 0.5 , 0.75)}
               className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'

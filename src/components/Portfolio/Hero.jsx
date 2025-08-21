@@ -54,7 +54,7 @@ const Hero = () => {
                 </a>
                 
                 <a className="bannerIcon" href='https://www.linkedin.com/in/edwin-y-pedraza-b-/' target= '_blank' rel='noreferrer'>
-                  <FaLinkedinIn className="w-ful h-full"/>
+                  <FaLinkedinIn className="w-full h-full"/>
                 </a>
               </div>
             </div>
@@ -65,18 +65,18 @@ const Hero = () => {
               </h2>
               <div className="flex gap-4 ">
               <a className="bannerIcon" href = "#tech">
-                  <FaReact values={{size: '100px'}}/>
-                  
+                  <FaReact size={100} />
+
                 </a>
                 
                 <a className="bannerIcon" href = "#tech">
-                <TbBrandNextjs className="w-ful h-full"/>
+                <TbBrandNextjs className="w-full h-full"/>
                 </a>
                 <a className="bannerIcon" href = "#tech">
-                  <SiTailwindcss className="w-ful h-full"/>
+                  <SiTailwindcss className="w-full h-full"/>
                 </a>
                 <a className="bannerIcon" href = "#tech">
-                  <SiFigma className="w-ful h-full"/>
+                  <SiFigma className="w-full h-full"/>
                 </a>
               </div>
           </div>
@@ -88,7 +88,7 @@ const Hero = () => {
         <div className='w-2/3 h-2/3 m-auto'>
 
           
-          < ModelCanvas />
+          <ModelCanvas />
         </div>
         <StarsCanvas/>
       </div>

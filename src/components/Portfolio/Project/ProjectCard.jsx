@@ -1,8 +1,14 @@
 
 import { motion } from "framer-motion";
 import {Tilt} from "react-tilt";
+<<<<<<< HEAD:src/components/Portfolio/Project/ProjectCard.jsx
 import { fadeIn} from "../utils/motion";
 import { github, webIcon } from "../../../assets";
+=======
+import { fadeIn} from "../../utils/motion";
+import { github, webIcon } from "../../assets";
+import { styles } from "../../styles";
+>>>>>>> main:src/components/Project/ProjectCard.jsx
 
 const ProjectCard =({
   index,
@@ -23,14 +29,14 @@ const ProjectCard =({
           max: 45,
           scale: 1,
           speed: 450}}
-          className=' p-5 rounded-2xl sm:w-[360px] w-full sm:h-full'
+          className={`${styles.cardPadding} rounded-2xl sm:w-[360px] w-full sm:h-full`}
       >
-        <div className=' relative w-full h-full'>
-          <img
-            src={image}
-            alt='project_image'
-            className='w-full h-full object-cover rounded-2xl bg-tertiary p-5'
-          />
+          <div className=' relative w-full h-full'>
+            <img
+              src={image}
+              alt='project_image'
+              className={`w-full h-full object-cover rounded-2xl bg-tertiary ${styles.cardPadding}`}
+            />
           
 
           <div className=' absolute inset-0 flex gap-2 justify-end m-3 card-img_hover'>
