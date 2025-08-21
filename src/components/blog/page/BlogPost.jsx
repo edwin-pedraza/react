@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from 'react'
-import { clientSupa } from "../../../supabase/client";
+import { supabase } from "../../../supabase/client";
 import { useNavigate } from 'react-router-dom';
 // import { Auth } from '@supabase/auth-ui-react'
 // import { ThemeSupa } from '@supabase/auth-ui-shared'
@@ -11,13 +11,13 @@ export default function BlogPost() {
 
 
   useEffect(() => {
-    clientSupa.auth.getSession().then(({ data: { session } }) => {
+    supabase.auth.getSession().then(({ data: { session } }) => {
       setSession(session)
     })
 
     const {
       data: { subscription },
-    } = clientSupa.auth.onAuthStateChange((_event, session) => {
+    } = supabase.auth.onAuthStateChange((_event, session) => {
       setSession(session)
     })
 

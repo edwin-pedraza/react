@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { clientSupa } from "../../../supabase/client";
+import { supabase } from "../../../supabase/client";
 import Search from './Search'
 import IntroPost from './IntroPost';
 // import IntroPost from '../Components/IntroPost'
@@ -19,7 +19,7 @@ function Home() {
 
 
     async function getPost() {
-      const { data: post } = await clientSupa.from("post").select();
+      const { data: post } = await supabase.from("post").select();
       setPost(post);
       setOrgPost(post);
     }
@@ -41,7 +41,7 @@ function Home() {
        
         <Search selectedTag={(tag)=>filterPost(tag)} />
 
-        {post.length>0? <IntroPost post={post[0]} />:null}
+        {/* {post.length>0? <IntroPost post={post[0]} />:null} */}
         {/* {post.length>0?  <Blogs posts={post}/>:null} */}
     
       

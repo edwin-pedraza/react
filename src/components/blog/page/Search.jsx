@@ -1,11 +1,11 @@
 import  {  useState } from 'react'
 import banner from '../../../assets/banner.jpg'
 import { IoSearchOutline } from "react-icons/io5";
-import { clientSupa } from "../../../supabase/client";
+import { supabase } from "../../../supabase/client";
 
 
-const { data:urlBanerimg } = clientSupa.storage.from('Postimg').getPublicUrl('BanerPost/banner1.jpeg')
-const { data:urlprueba, error } = clientSupa.storage
+const { data:urlBanerimg } = supabase.storage.from('Postimg').getPublicUrl('BanerPost/banner1.jpeg')
+const { data:urlprueba, error } = supabase.storage
 console.log(urlprueba, error)
 
 function Search({selectedTag}) {
