@@ -69,9 +69,9 @@ const About = () => {
           </motion.p>
         </div>
 
-        <div className="m-auto w-">
+        <div className="m-auto w-full sm:w-[360px]">
 
-          <Tilt className = "sm:w-full w-[360px]  ">
+          <Tilt className="w-full">
               <motion.div
               variants={fadeIn("left", "spring", 0.5 , 0.75)}
               className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
