@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
-import { styles } from "../styles";
-import { ModelCanvas, StarsCanvas } from "./canvas";
+import { styles } from "../../styles";
+import { Portfolio3DModels, StarsCanvas } from "./canvas";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { FaLinkedinIn, FaReact } from "react-icons/fa";
 import {TbBrandNextjs} from "react-icons/tb"
@@ -19,7 +19,7 @@ const Hero = () => {
     delaySpeed: 2000,
   });
   return (
-    <section className={`relative w-full h-screen mx-auto`}>
+    <section className={`relative w-full h-[90vh] mx-auto`}>
       <div
         className={`${styles.paddingX} absolute inset-0 top-[120px]  max-w-7xl mx-auto flex flex-col sm:flex-row items-start gap-5`}
       >
@@ -85,10 +85,10 @@ const Hero = () => {
           
           
         </div>
-        <div className='w-2/3 h-2/3 m-auto'>
+        <div className='basis-1/2 my-14 mx-4 sm:my-14 sm:mx-10'>
 
           
-          <ModelCanvas />
+          <Portfolio3DModels />
         </div>
         <StarsCanvas/>
       </div>

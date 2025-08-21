@@ -1,21 +1,41 @@
-
-
-
-import { Route, Routes } from 'react-router-dom';
-
-import App from './App';
-
+import { 
+  About,
+  Contact,
+  // Feedbacks,
+  Hero,
+  Navbar,
+  Tech,
+  Works,
+  StarsCanvas,
+} from './components/Portfolio';
+import Resume from './components/Portfolio/Resume';
 
 const Home =() => {
   
 
   return (
+
     <>
-      <Routes>
-        <Route path='/react' element = {<App/>}/>
-        {/* <Route path='/#resum' element = {<Education/>}/> */}
-      </Routes>
+    <div className='relative z-0 bg-primary'>
+        <div > 
+          <Navbar />
+          <Hero />
+          
+        </div>
+
+        <About />
+        <Resume/>
+        <Tech />
+        <Works />
+        {/* <Feedbacks /> */}
+     
+      </div>
+      <div className='relative'>
+        <Contact />
+        <StarsCanvas />
+      </div>
     </>
+    
     
     
   )

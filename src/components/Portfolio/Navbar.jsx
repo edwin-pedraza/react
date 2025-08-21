@@ -1,9 +1,9 @@
 import  { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-import { styles } from "../styles";
-import { navLinks } from "../constants";
-import { logo, menu, close } from "../assets";
+import { styles } from "../../styles";
+import { navLinks } from "./constants";
+import { logo, menu, close } from "../../assets";
 
 
 const Navbar = () => {
@@ -37,7 +37,7 @@ const Navbar = () => {
     >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
         <Link
-          to='/'
+          to='/react'
           className='flex items-center gap-2'
           onClick={() => {
             setActive("");
@@ -61,8 +61,16 @@ const Navbar = () => {
               onClick={() => setActive(nav.title)}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
+              
             </li>
+            
           ))}
+          <Link
+          to='/react/blog'
+            className={`${
+              active === true ? "text-white" : "text-secondary"
+            } hover:text-white text-[18px] font-medium cursor-pointer`}
+          >Blog</Link>
         </ul>
 
         <div className='sm:hidden flex flex-1 justify-end items-center'>

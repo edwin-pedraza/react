@@ -1,16 +1,8 @@
+import { Route, Routes } from 'react-router-dom';
+// import Education from './components/resume/Education';
 
-import { 
-  About,
-  Contact,
-  // Feedbacks,
-  Hero,
-  Navbar,
-  Tech,
-  Works,
-  StarsCanvas,
-} from './components';
-import Resume from './components/Resume';
-
+import Blog from './components/blog/Blog';
+import Home from './Home';
 
 const App =() => {
   
@@ -19,24 +11,13 @@ const App =() => {
     
     
     <>
-    <div className='relative z-0 bg-primary'>
-        <div > 
-          <Navbar />
-          <Hero />
-          
-        </div>
-
-        <About />
-        <Resume/>
-        <Tech />
-        <Works />
-        {/* <Feedbacks /> */}
-        
-      </div>
-      <div className='relative'>
-        <Contact />
-        <StarsCanvas />
-      </div>
+    
+      
+      <Routes>
+        <Route path='/react' element = {< Home/>}/>
+        <Route path='/react/blog' element = {< Blog/>}/>
+        {/* <Route path='/react/login' element = {< Blog/>}/> */}
+      </Routes>
     </>
     
       

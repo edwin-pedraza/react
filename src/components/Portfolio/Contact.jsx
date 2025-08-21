@@ -2,10 +2,14 @@ import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
-import { styles } from "../styles";
+import { styles } from "../../styles";
 import { EarthCanvas } from "./canvas";
-import { SectionWrapper } from "../hoc";
-import { slideIn, fadeIn } from "../utils/motion";
+import { SectionWrapper } from "./hoc";
+import { slideIn, fadeIn } from "./utils/motion";
+
+// template_vzrlzhc
+// service_mns5l1d
+// /3a4LTokkbFElR1C_h
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
