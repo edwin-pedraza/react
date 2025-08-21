@@ -20,6 +20,8 @@ const styles = {
 
   sectionHeadText:
     "text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]",
+  sectionHeadTextSm:
+    "text-white font-black md:text-[40px] sm:text-[32px] xs:text-[28px] text-[24px]",
   sectionSubText:
     "sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider",
   resumeText: "text-white font-black md:text-[30px] sm:text-[50px] xs:text-[20px] text-[15px]",
