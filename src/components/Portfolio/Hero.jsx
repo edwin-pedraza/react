@@ -88,7 +88,7 @@ const Hero = () => {
         <div className='w-2/3 h-2/3 m-auto'>
 
           
-          < ModelCanvas />
+        <ModelCanvas />
         </div>
         <StarsCanvas/>
       </div>
