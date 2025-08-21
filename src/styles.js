@@ -1,7 +1,17 @@
+/**
+ * Design tokens used across the application.
+ * - bodyText: Base styling for standard paragraph text.
+ * - paragraphSpacing: Consistent top margin for paragraphs.
+ * - cardPadding: Default padding for card-style containers.
+ */
 const styles = {
   paddingX: "sm:px-16 px-6",
   paddingY: "sm:py-16 py-6",
   padding: "sm:px-16 px-6 sm:py-16 py-10",
+
+  bodyText: "text-secondary text-[17px] leading-[30px]",
+  paragraphSpacing: "mt-4",
+  cardPadding: "p-5",
 
   heroHeadText:
     "font-black text-white lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px] mt-2",
